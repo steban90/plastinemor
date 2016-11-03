@@ -1,0 +1,1 @@
+Ser una empresa líder en el mercado nacional con reconocimiento internacional definiendo un posicionamiento claro frente a los clientes en términos de calidad, eficiencia e innovación de empaques de polipropileno y otros plásticos flexibles aplicando prácticas respetuosas del medio ambiente y procesos de aseguramiento de calidad.

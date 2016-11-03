@@ -1,0 +1,22 @@
+<FilesMatch "\.(ico|pdf|jpg|png|gif|woff)$">
+  Header set Cache-Control "max-age=172800, public, must-revalidate"
+</FilesMatch>
+
+RewriteEngine On
+# if the request's referer isn't from a php page on your site
+RewriteCond %{HTTP_REFERER} !^https?://www.plastinemor.com/.*\.php
+# deny access to the list of php files
+RewriteRule ^(restricted/*)$ - [L,F]
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^/]+)/$ $1.php
+
+RewriteCond %{THE_REQUEST} ^[A-Z]+\ /([^/]+/)*[^.]+\.php(\?[^\ ]*)?\ HTTP/
+RewriteRule ^(([^/]+/)*[^.]+)\.php$ http://www.plastinemor.com/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+RewriteRule (.*)$ http://www.plastinemor.com/$1/ [R=301,L]

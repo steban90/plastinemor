@@ -1,0 +1,69 @@
+/* 
+    Created on : 19/08/2016, 08:51:07 AM
+    Author     : Esteban Rincón
+*/
+
+html,body{
+    width: 100%;
+    height: 500px;
+    height: 100vh;
+    background: url(../img/sos.png);  /* COURTESY OF http://www.subtlepatterns.com */
+    background-attachment: fixed;
+}
+#form-credentials{    
+    position: relative;
+    width: 300px;    
+    border: 10px solid rgba(200,200,200,.4);
+    border-radius: 5px;    
+    padding: 20px 40px 20px 40px;
+    top: 15%;
+    margin: auto;
+    background: white;
+    -webkit-animation: fc 1s ease-out;
+    animation: fc 1s ease-out;
+}
+@-webkit-keyframes fc{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@keyframes fc{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+.box-shadowed{    
+    box-shadow: 0 0 15px rgba(0,0,0,.3);
+}
+
+.form-control:focus {
+  border-color: #00954f;
+  box-shadow: none;  
+}
+
+
+#msg{
+    position: fixed;    
+    min-width: 90px;
+    max-width: 230px;
+    min-height: 45px;    
+    bottom: 10px;
+    right: 15px;
+    background: white;
+    background: -webkit-linear-gradient(top, white,rgb(230,230,230), white);
+    background: -moz-linear-gradient(bottom, white,rgb(230,230,230), white);
+    background: -ms-linear-gradient(bottom, white,rgb(230,230,230), white);
+    background: -o-linear-gradient(bottom, white,rgb(230,230,230), white);
+    background: linear-gradient(to bottom, white,rgb(230,230,230), white);
+    border-radius: 3px;
+    color: black;    
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    display: none;
+    border: 1px solid rgba(43,43,43,.4);
+    z-index: 9999999;
+}
+
+#loader{    
+    z-index: 999;
+    width: 30px;      
+    opacity: .001;
+}

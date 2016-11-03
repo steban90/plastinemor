@@ -1,0 +1,199 @@
+/* 
+    Created on : 20/08/2016, 02:20:12 PM
+    Author     : Esteban Rincón
+*/
+/*
+    FOR: Plastinemor
+    font-family: 'Great Vibes', cursive;
+*/
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes); 
+
+*{
+    font-family: "Century Gothic",sans-serif;
+}
+#admin-menu{
+    min-height: 45px;
+    background: black;
+    background: -webkit-linear-gradient(left, rgb(15,15,15),rgb(0,0,0), rgb(15,15,15)); 
+    background: -o-linear-gradient(right, rgb(15,15,15),rgb(0,0,0), rgb(15,15,15)); 
+    background: -moz-linear-gradient(right,  rgb(15,15,15),rgb(0,0,0), rgb(15,15,15)); 
+    background: linear-gradient(to right,  rgb(15,15,15),rgb(0,0,0), rgb(15,15,15)); 
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: 0;
+}
+.logout{
+    cursor: pointer;
+}
+#admin-chat-container{    
+    min-height: 400px;
+    min-height: 90vh;
+    margin-top: 0;
+    padding: 0;
+}
+#admin-conversation-list-container{
+    border: 1px solid rgba(100,100,100,.4);
+    height: auto;
+    overflow-y: auto;
+}
+#admin-conversations-container{
+    border: 1px solid rgba(100,100,100,.4);
+    height: 90vh;
+    overflow-y: auto;
+    word-break: break-all;
+}
+
+.no-pad{
+    padding: 0;
+    margin: 0;
+}
+.bold{
+    font-weight: bolder;
+}
+.admin-chat-window{
+    height: 350px;    
+    box-shadow: 0 0 15px rgba(100,100,100,.5);
+    margin-top: 10px;
+    margin-left: 5px;
+    overflow: hidden;    
+}
+.admin-chat-window .panel{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.admin-chat-window-messages-container{
+    height: 290px;
+    background: #333333;
+    overflow-y: auto;
+}
+.admin-chat-window-input-container{
+    height: 35px;
+}
+.admin-chat-window-header{
+    height: 25px;
+    padding: 0;
+}
+.admin-chat-window-header > *{
+    line-height: 25px;
+    vertical-align: central;
+    text-indent: 10px;
+    font-size: 14px;    
+}
+.glyphicon-send{
+    font-size: 14px;
+}
+.admin-chat-messages-form input[type="text"]{    
+    height: 35px;
+    margin: 0;
+    border-radius: 0;
+    background: #222222;
+    border: 1px solid #222222;
+    color: rgb(200,200,200);
+}
+.admin-chat-messages-form .btn{
+    height: 35px;
+    
+    border-radius: 0;
+    margin-left: -2px;
+}
+
+.admin-chat-window .close{
+    font-size: 16px;
+    color: white;
+    opacity: 1;
+    margin-right: 5px;
+}
+
+
+
+
+.chat-msg{
+    position: static;    
+    width: 65%;
+    padding: 5px 0px 5px 0px;
+}
+.chat-msg p{
+    color: #cccccc;    
+    font-size: 12px;
+    font-weight: lighter;    
+    text-align: left;
+    line-height: 13px;
+
+}
+.auto-msg{
+    width: 60%;
+    background: #ffcc99;
+    border-radius: 10px;
+    padding: 5px;
+}
+.auto-msg p{
+    color: black;
+    text-align: center;     
+}
+/*====  CLIENT ==== */
+.plasti-msg{      
+    margin-left: 35%;
+    min-height: 30px;      
+    margin-top: 5px;
+    border-right: 4px solid #00954f;        
+}
+.plasti-msg p{    
+    margin-right: 5px;
+}
+/*====  PLASTINEMOR ==== */
+.client-msg{
+    min-height: 30px;      
+    margin-top: 5px;
+    border-left: 4px solid rgb(200,200,200);     
+}
+.client-msg p{        
+    margin-left: 10px;
+}
+cite{
+    color: #999999;
+    font-size: 10px;
+    font-weight: lighter;
+    margin-left: 5px;
+    word-break: keep-all;
+}
+.client-msg cite{
+    text-align: right;
+    margin-right: 5px;
+}
+.tag{    
+    border-radius: 50%;
+    color: gray;
+    padding: 2px 7px 2px 7px;
+    font-size: 10px;
+}
+.tag-red{
+    background: #990000;
+    color: white;
+}
+
+#email_content{    
+    resize: vertical;
+    max-height: 300px;
+}
+
+#msg{
+    position: fixed;    
+    min-width: 90px;
+    max-width: 230px;
+    min-height: 45px;    
+    bottom: 10px;
+    right: 15px;
+    background: white;
+    background: -webkit-linear-gradient(top, white,rgb(230,230,230), white);
+    background: -moz-linear-gradient(bottom, white,rgb(230,230,230), white);
+    background: -ms-linear-gradient(bottom, white,rgb(230,230,230), white);
+    background: -o-linear-gradient(bottom, white,rgb(230,230,230), white);
+    background: linear-gradient(to bottom, white,rgb(230,230,230), white);
+    border-radius: 3px;
+    color: black;    
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    display: none;
+    border: 1px solid rgba(43,43,43,.4);
+    z-index: 9999999;
+}

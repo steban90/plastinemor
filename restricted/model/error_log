@@ -1,0 +1,3 @@
+[29-Aug-2016 21:34:25 America/Bogota] PHP Fatal error:  Interface 'AbstractDBHandler' not found in /home2/plasti/public_html/restricted/model/DBAdministrator.php on line 3
+[29-Aug-2016 21:34:25 America/Bogota] PHP Fatal error:  Interface 'AbstractDBHandler' not found in /home2/plasti/public_html/restricted/model/DBAdministrator.php on line 3
+[29-Aug-2016 21:34:29 America/Bogota] PHP Fatal error:  Interface 'IAuth' not found in /home2/plasti/public_html/restricted/model/Auth.php on line 8

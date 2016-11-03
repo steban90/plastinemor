@@ -1,0 +1,71 @@
+/* 
+    Created on : 7/08/2016, 12:25:45 PM
+    Author     : Esteban Rincón
+*/
+#flores-con-mano{    
+    width: inherit;
+    float:left;
+    width: 220px;    
+    width: 40vw;         
+}
+
+#bouquets-lema{
+    width: 100%;
+    width: 100vw;
+    height: 400px;
+    height: 70vh;    
+    margin-left: 0;
+    -webkit-animation: bukets 2s ease-out;
+    animation: bukets 2s ease-out;    
+}
+@-webkit-keyframes bukets{
+    from{margin-left: -150px; opacity: 0;}
+    to{margin-left: 0; opacity: 1;}
+}
+@keyframes bukets{
+    from{margin-left: -50px; opacity: 0;}
+    to{margin-left: 0; opacity: 1;}    
+}
+
+#bouquets-lema h1{        
+    color: white;
+}
+#bouquets-lema h1:first-child{
+    margin-top: 80px;
+}
+#plasti-video{
+    height: 300px;
+    height: 70vh;
+    margin-bottom: 90px;
+}
+#bouquets-bg{
+    position: absolute;    
+    left: 0;
+    width: 100%;
+    height: 400px;
+    height: 70vh;
+    z-index: -1;
+}
+.info{
+    color: #c8dd56;
+}
+.globe{
+    color: #00899e;
+}
+.question{
+    color: #ff4957;
+}
+#info{    
+}
+#globe,#info,#question{    
+    -webkit-transition: opacity 2s ease-out;
+    -moz-transition: opacity 2s ease-out;
+    -o-transition: opacity 2s ease-out;
+    -ms-transition: opacity 2s ease-out;
+    transition: opacity 2s ease-out;
+    margin-left: -50px;
+    opacity: 0;
+}
+#envelope{
+    opacity: 0;
+}

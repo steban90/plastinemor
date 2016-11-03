@@ -1,0 +1,1 @@
+[22-Aug-2016 18:52:02 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/plasti/public_html/restricted/util/StringUtil.php:46) in /home2/plasti/public_html/restricted/model/Auth.php on line 61

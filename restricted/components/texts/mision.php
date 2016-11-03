@@ -1,0 +1,1 @@
+Fabricación y comercialización de empaques en polipropileno para productos perecederos con especialidad en flores, de acuerdo a la necesidad del cliente generando valor al producto con excelente diseño y altos estándares de calidad.
